@@ -17,9 +17,13 @@ export default {
 <template>
     <input v-model="text" placeholder="Edite" />
     <p> sua url:{{ text }}</p>
-    <button @click="printar">
-        <a href="https://convert2mp3s.com/api/single/mp3?url=" id="link-download">
-            Download 
-        </a>
-    </button>
+    <a href="https://convert2mp3s.com/api/single/mp3?url=" id="link-download">
+        <button @click="printar"> Download </button>
+    </a>
 </template>
+
+<style>
+a {
+    text-decoration: none;
+}
+</style>

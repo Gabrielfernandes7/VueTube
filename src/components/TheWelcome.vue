@@ -4,7 +4,6 @@
 
 <style>
   h1 {
-    color: hsla(160, 100%, 37%, 0.2) ;
+    color: hsl(160, 100%, 37%) ;
   }
-    /* */
 </style>

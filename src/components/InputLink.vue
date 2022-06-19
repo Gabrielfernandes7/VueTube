@@ -1,13 +1,25 @@
-<template>
-    <input type="text" name="url" class="url" placeholder="Insira o link" >
-</template>
+<script>
+export default {
+    data() {
+        return {
+            text: '',
+        }
+    },
 
-<style>
-
-iframe{
-    width: 40%;
-    height: 40%;
-    border-bottom: 95%;
+    methods: {
+        printar() {
+            document.getElementById('link-download').href = `https://convert2mp3s.com/api/single/mp3?url=${this.text}`;
+        }
+    }
 }
+</script>
 
-</style>
+<template>
+    <input v-model="text" placeholder="Edite" />
+    <p> sua url:{{ text }}</p>
+    <button @click="printar">
+        <a href="https://convert2mp3s.com/api/single/mp3?url=" id="link-download">
+            Download 
+        </a>
+    </button>
+</template>

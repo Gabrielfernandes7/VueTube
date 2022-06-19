@@ -16,7 +16,7 @@ export default {
 
 <template>
     <input v-model="text" placeholder="Edite" />
-    <p> sua url:{{ text }}</p>
+    <p> Sua url:{{ text }}</p>
     <a href="https://convert2mp3s.com/api/single/mp3?url=" id="link-download">
         <button @click="printar"> Download </button>
     </a>
@@ -25,5 +25,17 @@ export default {
 <style>
 a {
     text-decoration: none;
+}
+
+button, input{
+    width: 15rem;
+    height: 2.5rem;
+    background-color: rgba(10, 241, 164, 0.219);
+}
+
+button:hover {
+    background-color: aliceblue;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
 }
 </style>

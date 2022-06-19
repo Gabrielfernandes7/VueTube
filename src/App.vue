@@ -10,7 +10,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
       <HelloWorld msg="Faça seu download" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/download">Download</RouterLink>
+        <RouterLink to="/download">Download Página</RouterLink>
       </nav>
     </div>
   </header>
